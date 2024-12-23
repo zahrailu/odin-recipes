@@ -1,2 +1,2 @@
 # odin-recipes
-Odin project that I did.
+Odin projects that I did.
