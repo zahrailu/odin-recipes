@@ -1,0 +1,11 @@
+.container{
+  height: 1000px;
+  width: 1000px;
+  border: 1px solid black;
+  display: grid;
+}
+
+.square{
+  border: 1px solid #3f1cc0;
+  background-color: lightblue;
+}
