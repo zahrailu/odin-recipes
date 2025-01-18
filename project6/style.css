@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('font/Norse-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+.logo{
+  color: black;
+  font-family: 'norsebold', sans-serif; 
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: center;
+}
+.image{
+  background-image: url(benjamin-lehman-xnTcEJm5IZw-unsplash.jpg);
+  width: 40%;
+  height: 49rem;
+  background-size: cover;
+  position: relative;
+}
+.logo-img{
+  width: 50px;
+  height: 50px;
+  
+}
+.overlay-content{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
+  background-color: rgba(0, 0, 0, 0.562);
+  height: 100px;
+  width: 100%;
+  top: 20%;
+  padding: 20px 0;
+  
+}
+.logo{
+  color: rgb(191, 143, 70);
+}
+.matn-img{
+  padding-top: 43rem;
+  
+  font-weight: 500;
+}
+/* header part */
+.container-header{
+  background-color: beige;
+}
+header{
+text-align: center;
+width: 100%;
+padding: 40px;
+padding-left: 0;
+padding-left: 40px;
+}
+/* form part */
+.form{
+  
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.fakeform{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  padding: 20px;
+  
+}
+.fgroup, .sgroup{
+  display: flex;
+  flex-direction: column;
+  color: rgb(194, 188, 124);
+  border-radius: 5px;
+}
+h1{
+  color: burlywood;
+}
+.btn{
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #596D48;
+  border: none;
+  color: aliceblue;
+    box-shadow: 2px 2px 2px lightgrey;
+  
+}
