@@ -1,0 +1,269 @@
+/*
+#dash-header{
+font-size: 1.3rem;
+
+}
+.dashboard h1{
+  font-size: 0.8rem;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  
+}
+.icon-header{
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+.dashboard{
+  
+  display: block;
+  gap: 40px;
+  text-align: center;
+
+}
+.view-dashboard{
+  display: flex;
+  flex-direction: column;
+  
+}
+.header-dashboard{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  
+}*/
+
+
+body{
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  font-family: sans-serif, 'Open sans';
+  display: grid;
+  grid-template-areas: "nav header header header"
+  "nav main main aside"
+  "nav main main section";
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 150px 1fr 2fr 1fr;
+  height: 100vh;
+}
+.menu{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+.menu li:hover {
+  color: purple; 
+  cursor: pointer; 
+}
+#dashboard-top{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+}
+header,
+section,
+main,
+aside,
+nav{
+  background-color: steelblue;
+  color: #fff;
+  padding: 15px;
+  border: skyblue 1px solid;
+}
+header{
+  grid-area: header;
+  background-color: whitesmoke;
+  color: #fff;
+  padding: 20px;
+  border: white 1px solid;
+  
+}
+.btn{
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+}
+.input{
+  border-radius: 20px;
+  height: 22px;
+  width: 500px;
+  border: none;
+  background-color: rgb(221, 218, 218);
+}
+.Morganphoto{
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.fa-bell{
+  color: black;
+}
+.morganname{
+  color: #000;
+  font-size: 1rem;
+}
+.header-right{
+  display: flex;
+ gap: 70px;
+  margin-left: 20rem;
+}
+.header{
+  display: flex;
+}
+.btn-header{
+ 
+  
+}
+.btn-headerr{
+  margin-bottom: 12rem;
+  border-radius: 16px;
+  background-color: steelblue;
+  cursor: pointer;
+  border: steelblue 1px solid;
+  color: #fff;
+  padding: 13px;
+  display: flex;
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  
+}
+.doggy{
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+.neveshte{
+  color: #000;
+  font-size: 15px;
+}
+.id-header{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  gap: 8px;
+  
+}
+nav{
+  grid-area: nav;
+  background-color: steelblue;
+  color: #fff;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
+main{
+  grid-area: main;
+}
+section{
+  grid-area: section;
+}
+aside{
+  grid-area: aside;
+}
+/*ASIDE PART */
+aside{
+  background-color: rgb(202, 199, 199);
+  border: none;
+  
+  
+}
+.announcement{
+  color: #000;
+  text-align: center;
+  padding-top: 0;
+  font-size: 1rem;
+  text-align: center;
+  
+}
+.announcement-list{
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #000;
+}
+.announcement-list h3{
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.announcement-list p{
+  font-size: 0.9rem;
+}
+
+/*section */
+.photo-account{
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.trending{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #000;
+}
+section{
+  background-color: rgb(202, 199, 199);
+  border: none;
+}
+.trending-list{
+  border-bottom: 2px solid #8d8b8b;
+  margin-top: 1rem;
+}
+.trendingg{
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+}
+/*main */
+main{
+  background-color: rgb(202, 199, 199);
+  border: none;
+}
+.content-box{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap; /* کارت‌ها در ردیف‌های جدید بشکنند */
+  gap: 20px; /* فاصله بین کارت‌ها */
+  padding: 20px;
+}
+.inside-box{
+  flex: 1 1 calc(33.333% - 40px); /* هر کارت یک‌سوم فضا بگیرد با فاصله */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+main h2{
+  color: #000;
+  text-align: center;
+}
